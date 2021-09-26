@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>TravelUY - El mejor viaje de tu vida</title>
+
+    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/freelancer.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    
+
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navegación -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Menú hamburguesa -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#page-top">TravelUY</a>
+            </div>
+
+            <!-- Opciones del Menú -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#portfolio">Nuestros servicios</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">Nosotros</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+        
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img id="imagenPrincipal" class="img-responsive" src="img/logo.jpg" style="display: none;" alt="">
+                    <div class="intro-text">
+                        <span class="name">TravelUY</span>
+                        <hr class="star-light">
+                        <span class="skills">El mejor viaje de tu vida</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    
+        
+   
+    <!-- Nuestros servicios -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Nuestros servicios</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <!-- Opciones del sistema -->
+    
+            <div class="container">
+                
+               <ul class="nav nav-tabs" role="tablist">
+                        <li class="active">
+                            <a href="#aereo" class="btn btn-primary" role="tab" data-toggle="tab">
+                            Paquetes aereos
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#crucero"  class="btn btn-primary" role="tab" data-toggle="tab">
+                                Cruceros
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#auto"  class="btn btn-primary" role="tab" data-toggle="tab">
+                                Alquiler de vehiculos
+                            </a>
+                        </li>
+                        
+                    </ul>
+
+                    <div class="tab-content">
+                        <div class="tab-pane fade active in" id="aereo">
+                            <h4>Paquetes aereos</h4>
+                            
+                            <select class="form-select btn btn-primary" id="aereos" aria-label="Default select example">
+                                <option value="1">Orlando y Florida - 7 Noches</option>
+                                <option value="2">Punta Cana - All Inclusive - 7 Noches</option>
+                            </select>
+                            
+                            <input class="btn btn-primary" placeholder="Cantidad de personas" id="cantidadPersonasAereo"type="text" value="">
+                            <input class="btn btn-primary" placeholder="Nombre completo"id="pasajeroAereo" type="text" value="">
+                            <br><br>
+                            
+                            <input class="btn btn-primary" type="button" id="reservaAereo" value="Reservar">
+                            <a href="#portfolioModal5" class="btn btn-primary" id="verAereosReservados" data-toggle="modal">Ver pasajes reservados</a>
+                            <input class="btn btn-primary" type="button" id="limpiarAereo" value="Limpiar campos">
+                            <br><br>
+                            <h5 id="etiquetaReservaAereo">Complete los datos y realice su reserva</h5>
+                            
+                            
+                        </div>
+                        
+                        <div class="tab-pane fade" id="crucero">
+                            <h4>Cruceros</h4>
+                            <select class="form-select btn btn-primary" id="cruceros" aria-label="Default select example">
+                                <option value="1">MSC Miami-Bahamas- 5 Noches </option>
+                                <option value="2">Norwegian Brasil - 7 Noches</option>
+                            </select>
+                            
+                            <input class="btn btn-primary" placeholder="Cantidad de personas" id="cantidadPersonasCrucero" type="text" value="">
+                            <input class="btn btn-primary" placeholder="Nombre completo" id="pasajeroCrucero" type="text" value="">
+                            <br><br>
+                            
+                            <input class="btn btn-primary" type="button" id="reservaCrucero" value="Reservar">
+                            <a href="#portfolioModal4" class="btn btn-primary" id="verCrucerosReservados" data-toggle="modal">Ver pasajes reservados</a>
+                            <input class="btn btn-primary" type="button" id="limpiarCrucero" value="Limpiar campos">
+                            <br><br>
+                            <h5 id="etiquetaReservaCrucero">Complete los datos y realice su reserva</h5>
+                        </div>
+                        <div class="tab-pane fade" id="auto">
+                            <h4>Alquiler de vehiculos</h4>
+                            <select class="form-select btn btn-primary" id="autos" aria-label="Default select example">
+                                <option value="1">Auto </option>
+                                <option value="2">Camioneta</option>
+                            </select>
+                            
+                            <input class="btn btn-primary" placeholder="Cantidad de días" id="cantidadDiasAuto" type="text" value="">
+                            <input class="btn btn-primary" placeholder="Nombre completo" id="pasajeroAuto" type="text" value=""> 
+                            <select class="form-select btn btn-primary" id="seguroAuto" aria-label="Default select example">
+                                <option value="1">Con Seguro </option>
+                                <option value="2">Sin Seguro</option>
+                            </select>
+                            <br><br>
+                            
+                            <input class="btn btn-primary" type="button" id="reservaAuto" value="Reservar">
+                            <a href="#portfolioModal6" class="btn btn-primary" id="verAutosReservados" data-toggle="modal">Ver vehículos reservados</a>
+                            <input class="btn btn-primary" type="button" id="limpiarAuto" value="Limpiar campos">
+                            <br><br>
+                            <h5 id="etiquetaReservaAuto" >Complete los datos y realice su reserva</h5>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="dolares">
+                      <input class="btn btn-primary" type="button" id="cotizacionDolar" value="Ver cotización del dolar"><p id="dolar"></p>
+                    </div>
+
+    </div>
+    <br>
+            <div class="row">
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/aereo.jpg" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/crucero.jpg" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/rentacar.jpg" class="img-responsive" alt="">
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Nosotros-->
+    <section class="success" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Nosotros</h2>
+                    <hr class="star-light">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-2">
+                    <p>Desde hace 10 años, somos una empresa lider en el mercado uruguayo, con el respaldo de la mejores aerolineas de todo el mundo</p>
+                </div>
+                <div class="col-lg-4">
+                    <p>Ofrecemos valor agregado a nuestros cliente, con la calidez y la mejor atención para que nuestros clientes tengan la tranquilidad de viajar seguros</p>
+                </div>
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                  
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section de Contacto -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Contacto</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    
+                    <form name="sentMessage" id="contactForm" novalidate>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Nombre</label>
+                                <input type="text" class="form-control" placeholder="Nombre" id="name" required data-validation-required-message="Por favor ingrese su nombre">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Correo electrónico</label>
+                                <input type="email" class="form-control" placeholder="Correo electrónico" id="email" required data-validation-required-message="Por favor ingrese su correo.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Número de teléfono</label>
+                                <input type="tel" class="form-control" placeholder="Número de teléfono" id="phone" required data-validation-required-message="Por favor ingrese su número de teléfono.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Mensaje</label>
+                                <textarea rows="5" class="form-control" placeholder="Mensaje" id="message" required data-validation-required-message="Por favor ingrese un mensaje."></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <br>
+                        <div id="success"></div>
+                        <div class="row">
+                            <div class="form-group col-xs-12">
+                                <button type="submit" class="btn btn-success btn-lg">Enviar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                        <h3>Ubicación</h3>
+                        <p>San Antonio<br>Canelones, Uruguay</p>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Nuestras redes</h3>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Acerca de TravelUY</h3>
+                        <p>Creada por Juan Barrios.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; TravelUY 2021
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón para subir cuando estamos en resoluciones chicas -->
+    <div class="scroll-top page-scroll visible-xs visible-sm">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+    <!-- Modales utilizados en Nuestros servicios -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Paquetes aereos</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/aereo.jpg" class="img-responsive img-centered" alt="">
+                            <p>Trabajamos con las mejores líneas aereas y podemos armar paquetes aereos sorprendente con excelentes precios comparado con el mercado.</p>
+                            
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Cruceros</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/crucero.jpg" class="img-responsive img-centered" alt="">
+                            <p>Recorremos las mejores costas del planeta, con un servicio a bordo All inclusive increíble. Con espectaculos en vivo constantemente. Brindamos un excelente servicios y nuestros clientes nos reconocen por la calidad del servicio.</p>
+                            
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Alquiler de vehiculos</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/rentacar.jpg" class="img-responsive img-centered" alt="">
+                            <p>Manejamos vehículos de todo tipo de gama. Contamos con una gran flota, para brindar un gran servicio y también nos destacamos por la higiene y la excelente condición de los vehículos.</p>
+                            
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Cruceros reservados</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/crucero.jpg" class="img-responsive img-centered" alt="">
+                            
+                            <div id="crucerosReservados" class="list-inline item-details">
+                                
+                            </div>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Aereos Reservados</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/aereo.jpg" class="img-responsive img-centered" alt="">
+                            <div id="aereosReservados" class="list-inline item-details">
+                                
+                            </div>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Vehículos Reservados</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/rentacar.jpg" class="img-responsive img-centered" alt="">
+                            <div id="autosReservados" class="list-inline item-details">
+                                
+                            </div>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/freelancer.js"></script>
+
+    <!-- Proyecto JS - CoderHouse -->
+    <script src="js/proyecto.js"></script>
+
+</body>
+
+</html>
